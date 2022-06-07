@@ -247,7 +247,8 @@
         updateBox();
       });
 
-      // Function to automatically fetch data to the table on loading and after each activity.
+      //================== Function to automatically fetch data to the table on loading and after each activity.================
+
       function update() {
         let table = document.getElementById("tableBody");
         itemsArraystr = localStorage.getItem("itemsJson");
@@ -268,6 +269,8 @@
           table.innerHTML = str;
         }
       }
+      // for updating list just after opening page.
+      update();
 
       //   Delete button javascript
       deleteNote = (index) => {
